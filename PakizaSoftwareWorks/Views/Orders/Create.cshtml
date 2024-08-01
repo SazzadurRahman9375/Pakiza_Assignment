@@ -1,0 +1,244 @@
+﻿@model OrderModel
+@{
+    ViewData["Title"] = "Create";
+}
+<form asp-action="Create" method="post" asp-controller="Orders" id="frm">
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-success alert-dismissible fade show" role="alert" id="alertsuccess" style="display:none">
+                <strong>Success!</strong> Data saved.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-success alert-dismissible fade show" role="alert" id="alertfail" style="display:none">
+                <strong>Error!</strong> Failed to save data.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <h3>Customer info</h3>
+
+            <div class="form-group row mb-1">
+                <label class="col-form-label col-1">Order No</label>
+
+                <div class="col-1">
+                    <input type="text" class="form-control" value="@(ViewBag.OrderNo+1)" readonly />
+                </div>
+                <label asp-for="Customer.CustomerName" class="col-form-label col-2"></label>
+                <div class="col-2">
+                    <input type="text" asp-for="Customer.CustomerName" class="form-control" list="custs" />
+                    <span asp-validation-for="Customer.CustomerName" class="text-danger small"></span>
+
+                </div>
+
+                <label asp-for="Customer.Phone" class="col-form-label col-2"></label>
+                <div class="col-2">
+                    <input type="text" asp-for="Customer.Phone" class="form-control" />
+                    <span asp-validation-for="Customer.Phone" class="text-danger small"></span>
+                </div>
+
+                <label asp-for="Customer.Address" class="col-form-label col-2"></label>
+                <div class="col-2">
+                    <input type="text" asp-for="Customer.Address" class="form-control" />
+                    <span asp-validation-for="Customer.Address" class="text-danger small"></span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h3>Product info</h3>
+            <div id="pfrm">
+                @await Html.PartialAsync("_AddForm")
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" id="itemlist">
+            @await Html.PartialAsync("_OrderItemView")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-primary" id="save">Save</button>
+            </div>
+        </div>
+    </div>
+
+</form>
+<datalist id="custs">
+    @foreach (var c in ViewBag.CustomerNames)
+    {
+        <option value="@c">@c</option>
+    }
+</datalist>
+<datalist id="prods">
+    @foreach (var p in ViewBag.ProductNames)
+    {
+        <option value="@p">@p</option>
+    }
+</datalist>
+@section scripts {
+    <script src="~/libs/jquery/jquery.min.js"></script>
+    <script src="~/libs/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/libs/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        $("#Customer_CustomerName").change(function () {
+            //console.log($(this).val());
+            var name = $(this).val();
+            $.ajax({
+                url: `/Orders/GetCustomerDetail/?customerName=${name}`,
+                method: 'get',
+                dataType: 'json',
+                success: r => {
+                    if (r) {
+                        $("#Customer_Phone").val(r.phone);
+                        $("#Customer_Address").val(r.address);
+                    }
+                    else {
+                        $("#Customer_Phone").val('');
+                        $("#Customer_Address").val('');
+                    }
+
+                }
+            })
+        })
+        $(document).on("change", "input#ProductId", function () {
+            //console.log($(this).val());
+            var name = $(this).val();
+            $.ajax({
+                url: `/Orders/GetProductDetail/?productName=${name}`,
+                method: 'get',
+                dataType: 'json',
+                success: r => {
+                    if (r) {
+                        $("#UnitPrice").val(r.unitPrice);
+
+                    }
+                    else {
+                        $("#UnitPrice").val('');
+                    }
+
+                }
+            })
+        });
+        $(document).on("click", "button.add", function () {
+            // alert('ok');
+            let idOk = $("#frm").validate().element("#ProductId");
+
+            let qtyOk = $("#frm").validate().element("#Quantity");
+
+            let priceOk = $("#frm").validate().element("#UnitPrice");
+            if (idOk && qtyOk && priceOk) {
+                var data = { ProductName: $("#ProductId").val(), UnitPrice: $("#UnitPrice").val(), Quantity: $("#Quantity").val() }
+                $.ajax({
+                    method: 'post',
+                    url: '/Orders/AddItem',
+                    data: { item: data },
+                    success: r => {
+                        $("#itemlist").html(r);
+                        $("#ProductId").val('');
+                        $("#UnitPrice").val('');
+                        $("#Quantity").val('');
+                    }
+                })
+            }
+        });
+
+        $("#save").click(() => {
+            let cnameOk = $("#frm").validate().element("#Customer_CustomerName");
+            let phoneOk = $("#frm").validate().element("#Customer_Phone");
+            let addOk = $("#frm").validate().element("#Customer_Address");
+            if (cnameOk && phoneOk && addOk) {
+                var data = {
+                    CustomerName: $("#Customer_CustomerName").val(),
+                    Phone: $("#Customer_Phone").val(),
+                    Address: $("#Customer_Address").val()
+                }
+                //console.log(data);
+                $.ajax({
+                    method: 'post',
+                    url: '/Orders/Create',
+                    data: { customer: data },
+                    success: r => {
+                        if (r.success) {
+                            $("#frm").trigger('reset');
+
+                            $("#alertsuccess").show();
+                            resetItemListTable();
+                            window.location.reload();
+                        }
+                        else {
+                            $("#alertfail").show();
+                        }
+                    }
+                })
+            }
+        })
+        function resetItemListTable() {
+            $.ajax({
+                method: 'post',
+                url: '/Orders/AddItem',
+
+                success: r => {
+                    $("#itemlist").html(r);
+
+                }
+            })
+        }
+        $(document).on("click", "button.edit", function () {
+            let uniqueId = $(this).data("unique-id");
+            //alert(uniqueId);
+            $.ajax({
+                method: 'post',
+                url: '/Orders/EditItem?uniqueId=' + uniqueId,
+                success: r => {
+                    $("#pfrm").html(r);
+                }
+            })
+        });
+        $(document).on("click", "button.update-cancel", function () {
+            //alert('got it')
+            $.ajax({
+                method: 'get',
+                url: "/Orders/AddItemForm",
+                success: r => {
+                    //console.log(r);
+                    $("#pfrm").html(r);
+                }
+            })
+        });
+        $(document).on("click", "button.update", function () {
+            let idOk = $("#frm").validate().element("#ProductId");
+
+            let qtyOk = $("#frm").validate().element("#Quantity");
+
+            let priceOk = $("#frm").validate().element("#UnitPrice");
+            var data = { UniqueId: $("#UniqueId").val(), ProductName: $("#ProductId").val(), UnitPrice: $("#UnitPrice").val(), Quantity: $("#Quantity").val() };
+            //console.log(data);
+            $.ajax({
+                method: 'post',
+                url: '/Orders/UpdateItem',
+                data: { item: data },
+                success: r => {
+                    $("#pfrm").html(r);
+                    resetItemListTable();
+                    // $("#alertsuccess").show();
+                }
+            })
+        })
+        $(document).on("click", "button.delete", function () {
+            let uniqueId = $(this).data("unique-id");
+            //alert(uniqueId);
+            $.ajax({
+                method: 'post',
+                url: '/Orders/DeleteItem?uniqueId=' + uniqueId,
+                success: r => {
+                    $("#itemlist").html(r);
+                }
+            })
+        });
+    </script>
+}
+

@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .section {
+            width: 50%; 
+            height: 100vh; 
+            float: left; 
+        }
+
+        .section-left {
+            background-color: white; 
+        }
+
+        .section-right {
+            background-color: white;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+            .image-container img {
+                max-width: 50%;
+                max-height: 50%;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <marquee>
+            <h1><b>Welcome To Application</b></h1>
+        </marquee>
+    </div>
+    <div class="background-container section section-right">
+        <h1 style="color:darkcyan;font-size:250%; text-align:center;padding-top:100px;font-weight:bold;">Project for Pakiza Software Limited</h1>
+        <h3 style="color: darkblue; font-size: 200%; text-align: center; font-weight: bold;">Sazzadur Rahman</h3>
+        <h2>Technologies used in the project</h2>
+        <ul>
+            <li>ASP>NET Core</li>
+            <li>MVC Architecture</li>
+            <li>Jquery</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </div>
+    <div class="section section-left image-container">
+        <img src="~/Pictures/Sazzad.jpg">
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,162 @@
+﻿@model PakizaSoftwareWorks.Models.OrderInputModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Customer Details</h4>
+<hr />
+<div class="row">
+
+    <div class="col-9">
+        <form asp-action="Edit" asp-controller="Orders" method="post">
+            <input type="hidden" asp-for="OrderId"/>
+            <label class="col-form-label col-1">Order No</label>
+
+            <div class="col-1">
+                <input type="text" class="form-control" value="@(ViewBag.OrderNo)" readonly />
+            </div>
+                <div class="form-group row mb-1">
+                    <label asp-for="CustomerName" class="col-form-label col-2"></label>
+                    <div class="col-4">
+                        <input type="text" asp-for="CustomerName" class="form-control" list="custs" />
+                        <span asp-validation-for="CustomerName" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row mb-1">
+                    <label asp-for="Phone" class="col-form-label col-2"></label>
+                    <div class="col-4">
+                        <input type="text" asp-for="Phone" class="form-control" />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row mb-1">
+                    <label asp-for="Address" class="col-form-label col-2"></label>
+                    <div class="col-4">
+                        <input type="text" asp-for="Address" class="form-control" />
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-9">
+                    <div class="d-flex justify-content-between">
+                        <h4>Order Details</h4>
+                        <button type="submit" name="act" value="add" class="btn btn-secondary btn-sm mb-1" formnovalidate>Add</button>
+                    </div>
+                    <table class="table table-bordered" id="myTable">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Unit Price</th>
+                                <th>Quantity</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (var i = 0; i < Model.OrderItems.Count; i++)
+                            {
+                                <tr id="row_@i">
+                                <td>
+                                    <input type="text" asp-for="OrderItems[i].Product.ProductName" class="form-control" list="prods" />
+                                    <span asp-validation-for="OrderItems[i].Product.ProductName" class="text-danger"></span>
+                                </td>
+                                <td>
+                                    <input type="number" asp-for="OrderItems[i].Product.UnitPrice" class="form-control" />
+                                    <span asp-validation-for="OrderItems[i].Product.UnitPrice" class="text-danger"></span>
+                                </td>
+                                <td>
+                                        <input type="number" asp-for="OrderItems[i].Quantity" class="form-control" />
+                                        <span asp-validation-for="OrderItems[i].Quantity" class="text-danger"></span>
+                                </td>
+
+                                 <td>
+                                      <button type="submit" name="act" value="remove_@i" class="btn btn-danger btn-sm" formnovalidate>Remove</button>
+                                 </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-9 d-flex justify-content-end">
+                    <button type="submit" name="act" value="update" class="btn btn-primary">Save</button>
+                </div>
+        </form>
+    </div>
+
+</div>
+
+
+<div>
+    <a asp-action="Index" class="btn btn-dark">Back to List</a>
+</div>
+
+<datalist id="custs">
+    @foreach (var c in ViewBag.CustomerNames)
+    {
+        <option value="@c">@c</option>
+    }
+</datalist>
+<datalist id="prods">
+    @foreach (var c in ViewBag.ProductNames)
+    {
+        <option value="@c">@c</option>
+    }
+</datalist>
+<div id="contentDiv">
+</div>
+
+@section scripts {
+    <script src="~/libs/jquery/jquery.min.js"></script>
+    <script>
+        $("#CustomerName").change(function () {
+            console.log($(this).val());
+            var name = $(this).val();
+            $.ajax({
+                url: `/Orders/GetCustomerDetail/?customerName=${name}`,
+                method: 'get',
+                dataType: 'json',
+                success: r => {
+                    console.log(r);
+                    if (r) {
+                        $("#Phone").val(r.phone);
+                        $("#Address").val(r.address);
+                    }
+                    else {
+                        $("#Phone").val('');
+                        $("#Address").val('');
+                    }
+
+                }
+            })
+        })
+    </script>
+
+    <script>
+            $("#OrderItems_0__Product_ProductName").change(function () {
+                console.log($(this).val());
+                var name = $(this).val();
+                $.ajax({
+                    url: `/Orders/GetProductDetail/?productName=${name}`,
+                    method: 'get',
+                    dataType: 'json',
+                    success: r => {
+                        if (r) {
+                            $("#OrderItems_0__Product_UnitPrice").val(r.unitPrice);
+                        }
+                        else {
+                            $("#OrderItems_0__Product_UnitPrice").val('');
+                        }
+
+                    }
+                })
+            })
+
+    </script>
+
+
+}
+

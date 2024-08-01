@@ -1,0 +1,46 @@
+﻿@model IEnumerable<OrderItemModel>
+@if (Model == null)
+{
+    <div>No Item Addded</div>
+}
+else
+{
+    var i = 0;
+    <h3>Item List</h3>
+    <table class="table table-bordered">
+        <thead class="table-secondary">
+            <tr>
+                <th>SL</th>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var x in Model)
+            {
+                <tr>
+                    <td>@(++i)</td>
+                    <td>@x.ProductName</td>
+                    <td>@x.UnitPrice</td>
+                    <td>@x.Quantity</td>
+                    <td>@(x.UnitPrice * x.Quantity)</td>
+                    <td>
+                        <button type="button" class="btn btn-primary btn-sm edit" data-unique-id="@x.UniqueId">Edit</button>
+                        <button type="button" class="btn btn-danger btn-sm delete" data-unique-id="@x.UniqueId">Delete</button>
+                    </td>
+                </tr>
+            }
+            <tr class="text-xxl-start">
+                <td><strong>Total</strong></td>
+                <td></td>
+                <td></td>
+                <td><strong>@(Model.Sum(x => x.Quantity).ToString("0.00"))</strong></td>
+                <td><strong>@(Model.Sum(x => x.UnitPrice * x.Quantity).ToString("0.00"))</strong></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+}

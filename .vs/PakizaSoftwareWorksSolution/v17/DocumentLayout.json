@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|f:\\pakiza sent\\pakizasoftwareworks\\pakizasoftwareworks\\views\\orders\\_orderitemview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|solutionrelative:pakizasoftwareworks\\views\\orders\\_orderitemview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|f:\\pakiza sent\\pakizasoftwareworks\\pakizasoftwareworks\\views\\orders\\_addform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|solutionrelative:pakizasoftwareworks\\views\\orders\\_addform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|f:\\pakiza sent\\pakizasoftwareworks\\pakizasoftwareworks\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|solutionrelative:pakizasoftwareworks\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|f:\\pakiza sent\\pakizasoftwareworks\\pakizasoftwareworks\\models\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|solutionrelative:pakizasoftwareworks\\models\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|f:\\pakiza sent\\pakizasoftwareworks\\pakizasoftwareworks\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|solutionrelative:pakizasoftwareworks\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|f:\\pakiza sent\\pakizasoftwareworks\\pakizasoftwareworks\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|solutionrelative:pakizasoftwareworks\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|f:\\pakiza sent\\pakizasoftwareworks\\pakizasoftwareworks\\models\\orderinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|solutionrelative:pakizasoftwareworks\\models\\orderinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|f:\\pakiza sent\\pakizasoftwareworks\\pakizasoftwareworks\\models\\dbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|solutionrelative:pakizasoftwareworks\\models\\dbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|f:\\pakiza sent\\pakizasoftwareworks\\pakizasoftwareworks\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|solutionrelative:pakizasoftwareworks\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|f:\\pakiza sent\\pakizasoftwareworks\\pakizasoftwareworks\\views\\orders\\print.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|solutionrelative:pakizasoftwareworks\\views\\orders\\print.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|f:\\pakiza sent\\pakizasoftwareworks\\pakizasoftwareworks\\views\\orders\\_editform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|solutionrelative:pakizasoftwareworks\\views\\orders\\_editform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|f:\\pakiza sent\\pakizasoftwareworks\\pakizasoftwareworks\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4175A3F4-9D93-420D-B0E7-BFF9DE426718}|PakizaSoftwareWorks\\PakizaSoftwareWorks.csproj|solutionrelative:pakizasoftwareworks\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Orders\\Create.cshtml",
+              "RelativeDocumentMoniker": "PakizaSoftwareWorks\\Views\\Orders\\Create.cshtml",
+              "ToolTip": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Orders\\Create.cshtml",
+              "RelativeToolTip": "PakizaSoftwareWorks\\Views\\Orders\\Create.cshtml",
+              "ViewState": "AQIAABsAAACARmZmZmYjwKkAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T09:16:33.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Orders\\Edit.cshtml",
+              "RelativeDocumentMoniker": "PakizaSoftwareWorks\\Views\\Orders\\Edit.cshtml",
+              "ToolTip": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Orders\\Edit.cshtml",
+              "RelativeToolTip": "PakizaSoftwareWorks\\Views\\Orders\\Edit.cshtml",
+              "ViewState": "AQIAAAQAAADAZ2ZmZmYUwBIAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T09:32:12.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_AddForm.cshtml",
+              "DocumentMoniker": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Orders\\_AddForm.cshtml",
+              "RelativeDocumentMoniker": "PakizaSoftwareWorks\\Views\\Orders\\_AddForm.cshtml",
+              "ToolTip": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Orders\\_AddForm.cshtml",
+              "RelativeToolTip": "PakizaSoftwareWorks\\Views\\Orders\\_AddForm.cshtml",
+              "ViewState": "AQIAAA0AAACwZWZmZmYkwAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T09:19:10.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_OrderItemView.cshtml",
+              "DocumentMoniker": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Orders\\_OrderItemView.cshtml",
+              "RelativeDocumentMoniker": "PakizaSoftwareWorks\\Views\\Orders\\_OrderItemView.cshtml",
+              "ToolTip": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Orders\\_OrderItemView.cshtml",
+              "RelativeToolTip": "PakizaSoftwareWorks\\Views\\Orders\\_OrderItemView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T09:28:16.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "PakizaSoftwareWorks\\Controllers\\OrdersController.cs",
+              "ToolTip": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "PakizaSoftwareWorks\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAlwBwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T09:08:19.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DbModel.cs",
+              "DocumentMoniker": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Models\\DbModel.cs",
+              "RelativeDocumentMoniker": "PakizaSoftwareWorks\\Models\\DbModel.cs",
+              "ToolTip": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Models\\DbModel.cs",
+              "RelativeToolTip": "PakizaSoftwareWorks\\Models\\DbModel.cs",
+              "ViewState": "AQIAADsAAACAmpmZmRkowEYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T11:41:11.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderInputModel.cs",
+              "DocumentMoniker": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Models\\OrderInputModel.cs",
+              "RelativeDocumentMoniker": "PakizaSoftwareWorks\\Models\\OrderInputModel.cs",
+              "ToolTip": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Models\\OrderInputModel.cs",
+              "RelativeToolTip": "PakizaSoftwareWorks\\Models\\OrderInputModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T11:42:02.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PakizaSoftwareWorks\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PakizaSoftwareWorks\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T11:08:51.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Print.cshtml",
+              "DocumentMoniker": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Orders\\Print.cshtml",
+              "RelativeDocumentMoniker": "PakizaSoftwareWorks\\Views\\Orders\\Print.cshtml",
+              "ToolTip": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Orders\\Print.cshtml",
+              "RelativeToolTip": "PakizaSoftwareWorks\\Views\\Orders\\Print.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T10:56:52.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Models\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "PakizaSoftwareWorks\\Models\\DbSeeder.cs",
+              "ToolTip": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Models\\DbSeeder.cs",
+              "RelativeToolTip": "PakizaSoftwareWorks\\Models\\DbSeeder.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAQwCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T11:04:30.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PakizaSoftwareWorks\\Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PakizaSoftwareWorks\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T10:18:37.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_EditForm.cshtml",
+              "DocumentMoniker": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Orders\\_EditForm.cshtml",
+              "RelativeDocumentMoniker": "PakizaSoftwareWorks\\Views\\Orders\\_EditForm.cshtml",
+              "ToolTip": "F:\\Pakiza Sent\\PakizaSoftwareWorks\\PakizaSoftwareWorks\\Views\\Orders\\_EditForm.cshtml",
+              "RelativeToolTip": "PakizaSoftwareWorks\\Views\\Orders\\_EditForm.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T09:15:35.287Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
